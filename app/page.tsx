@@ -90,10 +90,10 @@ export default function Home() {
           <div
             className="win98-window window-appear"
             style={{
-              top: '60px',
-              left: '100px',
-              width: '650px',
-              maxHeight: 'calc(100vh - 120px)',
+              top: '40px',
+              left: '120px',
+              width: '700px',
+              maxHeight: 'calc(100vh - 100px)',
               zIndex: getWindow('about')?.zIndex,
             }}
             onClick={() => bringToFront('about')}
@@ -111,69 +111,252 @@ export default function Home() {
             </div>
 
             <div className="win98-content" style={{ maxHeight: 'calc(100vh - 200px)', overflowY: 'auto' }}>
-              <h1 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '12px', color: '#000080' }}>
-                Welcome to My Portfolio! 🚀
-              </h1>
-
-              <p style={{ fontSize: '12px', lineHeight: '1.6', marginBottom: '12px' }}>
-                <strong>AI Instructor • Product Leader • Serial Entrepreneur</strong>
-              </p>
-
-              <div style={{ background: '#ffffcc', border: '1px solid #808080', padding: '8px', marginBottom: '12px' }}>
-                <p style={{ fontSize: '11px', lineHeight: '1.5' }}>
-                  <strong>🎯 Impact at a Glance:</strong><br/>
-                  • 250,000+ students taught globally<br/>
-                  • 12+ years building AI products<br/>
-                  • Products with $10M+ MRR and 5M+ active users<br/>
-                  • 200+ hours of live AI training delivered
+              {/* Hero Section */}
+              <div style={{
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                padding: '16px',
+                marginBottom: '16px',
+                border: '2px solid',
+                borderColor: '#ffffff #000000 #000000 #ffffff',
+                color: 'white'
+              }}>
+                <h1 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '8px', color: 'white', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
+                  Yash Thakker
+                </h1>
+                <p style={{ fontSize: '13px', marginBottom: '4px', color: '#e0e0ff' }}>
+                  AI Instructor • Product Leader • Serial Entrepreneur
+                </p>
+                <p style={{ fontSize: '11px', color: '#d0d0ff', lineHeight: '1.5' }}>
+                  Empowering 250,000+ students worldwide to harness the power of AI
                 </p>
               </div>
 
-              <h2 style={{ fontSize: '14px', fontWeight: 'bold', marginTop: '16px', marginBottom: '8px', color: '#000080' }}>
-                🎓 Educational Excellence
-              </h2>
-              <ul className="project-list">
-                <li><strong>Udemy:</strong> 200,000+ students across 50+ AI courses (4.7+ star rating)</li>
-                <li><strong>YouTube:</strong> 15,000+ subscribers learning AI daily</li>
-                <li><strong>ExplainX.ai:</strong> Founded AI education platform helping thousands</li>
-                <li><strong>Proven Results:</strong> 85% productivity improvement in 30 days</li>
-              </ul>
+              {/* Quick Stats */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '16px' }}>
+                <div style={{ background: '#ffffcc', border: '2px solid', borderColor: '#ffffff #000000 #000000 #ffffff', padding: '10px', textAlign: 'center' }}>
+                  <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#000080' }}>250K+</div>
+                  <div style={{ fontSize: '10px', marginTop: '4px' }}>Students Taught</div>
+                </div>
+                <div style={{ background: '#ccffcc', border: '2px solid', borderColor: '#ffffff #000000 #000000 #ffffff', padding: '10px', textAlign: 'center' }}>
+                  <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#008000' }}>12+</div>
+                  <div style={{ fontSize: '10px', marginTop: '4px' }}>Years Experience</div>
+                </div>
+                <div style={{ background: '#ffcccc', border: '2px solid', borderColor: '#ffffff #000000 #000000 #ffffff', padding: '10px', textAlign: 'center' }}>
+                  <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#800000' }}>$10M+</div>
+                  <div style={{ fontSize: '10px', marginTop: '4px' }}>Monthly MRR Built</div>
+                </div>
+                <div style={{ background: '#cce5ff', border: '2px solid', borderColor: '#ffffff #000000 #000000 #ffffff', padding: '10px', textAlign: 'center' }}>
+                  <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#000080' }}>5M+</div>
+                  <div style={{ fontSize: '10px', marginTop: '4px' }}>Active Users</div>
+                </div>
+              </div>
 
-              <h2 style={{ fontSize: '14px', fontWeight: 'bold', marginTop: '16px', marginBottom: '8px', color: '#000080' }}>
-                💼 Professional Background
-              </h2>
-              <ul className="project-list">
-                <li>8 years in AI software development at Fortune 500 companies</li>
-                <li>Led teams at <strong>TATA Group</strong> and <strong>PayPal</strong></li>
-                <li>MBA from SIMSREE, B.Tech in Information Technology</li>
-                <li>Built products generating <strong>$10M+ monthly recurring revenue</strong></li>
-              </ul>
-
-              <h2 style={{ fontSize: '14px', fontWeight: 'bold', marginTop: '16px', marginBottom: '8px', color: '#000080' }}>
-                🚀 Founded Companies
-              </h2>
-              <ul className="project-list">
-                <li><strong>ExplainX.ai</strong> - AI education platform (flagship product)</li>
-                <li><strong>AISOLO Technologies</strong> - Parent company driving AI innovation</li>
-                <li><strong>Olly.social</strong> - Social media growth tool (25K users, 5K+ paid subscribers)</li>
-                <li><strong>Infloq.com</strong> - AI-powered influencer marketing platform</li>
-              </ul>
-
-              <h2 style={{ fontSize: '14px', fontWeight: 'bold', marginTop: '16px', marginBottom: '8px', color: '#000080' }}>
-                🎯 Core Expertise
-              </h2>
-              <div style={{ background: '#c0c0c0', padding: '8px', border: '2px solid', borderColor: '#ffffff #000000 #000000 #ffffff' }}>
-                <p style={{ fontSize: '11px', lineHeight: '1.6' }}>
-                  <strong>Technical:</strong> Generative AI, ChatGPT, Claude AI, Prompt Engineering, LLMs, AI Agents<br/>
-                  <strong>Business:</strong> Product Strategy, SaaS Development, Tech Leadership, AI Consulting<br/>
-                  <strong>Content:</strong> AI for Research, Content Automation, SEO, Educational Design
+              {/* My Story */}
+              <div className="project-card">
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span>📖</span> My Story
+                </h3>
+                <p style={{ fontSize: '12px', lineHeight: '1.7', marginBottom: '8px' }}>
+                  I&apos;m an AI educator and product builder on a mission to democratize AI knowledge.
+                  With over a decade of experience in tech, I&apos;ve transitioned from building products
+                  at Fortune 500 companies to teaching the next generation of AI practitioners.
+                </p>
+                <p style={{ fontSize: '12px', lineHeight: '1.7' }}>
+                  From <strong>TATA Group</strong> to <strong>PayPal</strong>, I&apos;ve led teams that built
+                  products serving millions of users and generating millions in revenue. Now, I channel that
+                  expertise into creating world-class AI education that delivers <strong>measurable results</strong> -
+                  85% productivity improvement in just 30 days.
                 </p>
               </div>
 
-              <div style={{ marginTop: '16px', padding: '12px', background: '#000080', color: 'white' }}>
-                <p style={{ fontSize: '12px', textAlign: 'center', fontWeight: 'bold' }}>
-                  📬 Available for: Corporate Training • Consulting • Speaking Engagements • Workshops
-                </p>
+              {/* Educational Impact */}
+              <div className="project-card" style={{ background: '#e6f3ff' }}>
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span>🎓</span> Educational Impact
+                </h3>
+                <div style={{ marginBottom: '12px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                    <strong style={{ fontSize: '11px' }}>Udemy Platform</strong>
+                    <span style={{ fontSize: '10px', background: '#4CAF50', color: 'white', padding: '2px 6px', borderRadius: '3px' }}>4.7★ Rating</span>
+                  </div>
+                  <p style={{ fontSize: '11px', color: '#555', marginBottom: '8px' }}>
+                    200,000+ students • 50+ comprehensive AI courses • Top-rated instructor
+                  </p>
+                </div>
+                <div style={{ marginBottom: '12px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                    <strong style={{ fontSize: '11px' }}>YouTube Channel</strong>
+                    <span style={{ fontSize: '10px', background: '#FF0000', color: 'white', padding: '2px 6px', borderRadius: '3px' }}>15K+ Subs</span>
+                  </div>
+                  <p style={{ fontSize: '11px', color: '#555', marginBottom: '8px' }}>
+                    Free AI tutorials • Weekly content • Practical demonstrations
+                  </p>
+                </div>
+                <div>
+                  <strong style={{ fontSize: '11px' }}>ExplainX.ai (Flagship)</strong>
+                  <p style={{ fontSize: '11px', color: '#555', marginTop: '2px' }}>
+                    AI education platform • Interactive learning • Real-world projects
+                  </p>
+                </div>
+              </div>
+
+              {/* Professional Journey */}
+              <div className="project-card">
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span>💼</span> Professional Journey
+                </h3>
+                <div style={{ borderLeft: '3px solid #000080', paddingLeft: '12px', marginLeft: '8px' }}>
+                  <div style={{ marginBottom: '12px' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080' }}>Product Leader @ Fortune 500</div>
+                    <div style={{ fontSize: '10px', color: '#666', marginBottom: '4px' }}>TATA Group • PayPal • 8 years</div>
+                    <p style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      Led cross-functional teams building AI-powered products. Shipped features
+                      serving 5M+ active users with $10M+ monthly recurring revenue.
+                    </p>
+                  </div>
+                  <div style={{ marginBottom: '12px' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080' }}>AI Software Development</div>
+                    <div style={{ fontSize: '10px', color: '#666', marginBottom: '4px' }}>Enterprise & SaaS • 8 years</div>
+                    <p style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      Full-stack development, ML model deployment, system architecture,
+                      API design, and scaling infrastructure for millions of requests.
+                    </p>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080' }}>Education & Credentials</div>
+                    <div style={{ fontSize: '10px', color: '#666', marginBottom: '4px' }}>MBA (SIMSREE) • B.Tech (IT)</div>
+                    <p style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      Combining technical depth with business acumen to build products
+                      that solve real problems at scale.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Companies Founded */}
+              <div className="project-card" style={{ background: '#fff3e0' }}>
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span>🚀</span> Companies I&apos;ve Built
+                </h3>
+                <div style={{ display: 'grid', gap: '10px' }}>
+                  <div style={{ padding: '8px', background: 'white', border: '1px solid #ddd' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080', marginBottom: '4px' }}>
+                      ExplainX.ai
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      <strong>Flagship AI Education Platform</strong> - Comprehensive courses,
+                      hands-on projects, and proven learning methodologies that deliver results.
+                    </div>
+                  </div>
+                  <div style={{ padding: '8px', background: 'white', border: '1px solid #ddd' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080', marginBottom: '4px' }}>
+                      AISOLO Technologies
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      <strong>Parent Company</strong> - Driving AI innovation across education,
+                      automation, and enterprise solutions.
+                    </div>
+                  </div>
+                  <div style={{ padding: '8px', background: 'white', border: '1px solid #ddd' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080', marginBottom: '4px' }}>
+                      Olly.social
+                      <span style={{ fontSize: '9px', background: '#4CAF50', color: 'white', padding: '1px 4px', borderRadius: '2px', marginLeft: '6px' }}>
+                        25K Users
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      <strong>Social Media Growth Tool</strong> - Helping creators and businesses
+                      grow their social presence. 5K+ paid subscribers.
+                    </div>
+                  </div>
+                  <div style={{ padding: '8px', background: 'white', border: '1px solid #ddd' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 'bold', color: '#000080', marginBottom: '4px' }}>
+                      Infloq.com
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.5' }}>
+                      <strong>AI Influencer Marketing Platform</strong> - Connecting brands with
+                      influencers using intelligent matching algorithms.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Core Expertise */}
+              <div className="project-card">
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span>🎯</span> Core Expertise
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '8px' }}>
+                  <div>
+                    <div style={{ fontSize: '11px', fontWeight: 'bold', color: '#000080', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span>⚡</span> Technical Skills
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.6', paddingLeft: '20px' }}>
+                      Generative AI • Large Language Models • ChatGPT & Claude AI •
+                      Prompt Engineering • AI Agents • RAG Systems • Fine-tuning •
+                      Full-Stack Development • Python • JavaScript/TypeScript • Next.js
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '11px', fontWeight: 'bold', color: '#000080', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span>💡</span> Business & Strategy
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.6', paddingLeft: '20px' }}>
+                      Product Strategy • SaaS Development • Go-to-Market •
+                      Tech Leadership • Team Building • Agile Methodologies •
+                      AI Consulting • Digital Transformation
+                    </div>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '11px', fontWeight: 'bold', color: '#000080', marginBottom: '4px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span>📝</span> Content & Marketing
+                    </div>
+                    <div style={{ fontSize: '11px', lineHeight: '1.6', paddingLeft: '20px' }}>
+                      AI for Content Creation • SEO Optimization • Technical Writing •
+                      Educational Design • Content Automation • Community Building •
+                      Social Media Strategy
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* What I Can Help With */}
+              <div style={{
+                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                padding: '14px',
+                marginTop: '16px',
+                border: '2px solid',
+                borderColor: '#ffffff #000000 #000000 #ffffff',
+                color: 'white'
+              }}>
+                <h3 style={{ fontSize: '13px', fontWeight: 'bold', marginBottom: '10px', color: 'white' }}>
+                  💼 What I Can Help You With
+                </h3>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '11px' }}>
+                  <div>✓ Corporate AI Training</div>
+                  <div>✓ AI Strategy Consulting</div>
+                  <div>✓ Product Development</div>
+                  <div>✓ Speaking Engagements</div>
+                  <div>✓ Workshop Facilitation</div>
+                  <div>✓ Team Upskilling</div>
+                  <div>✓ AI Implementation</div>
+                  <div>✓ Technical Advisory</div>
+                </div>
+              </div>
+
+              {/* Testimonial Style Quote */}
+              <div style={{
+                marginTop: '16px',
+                padding: '12px',
+                background: '#f9f9f9',
+                borderLeft: '4px solid #000080',
+                fontStyle: 'italic',
+                fontSize: '11px',
+                lineHeight: '1.6'
+              }}>
+                &quot;My mission is to make AI accessible to everyone. Whether you&apos;re a complete beginner
+                or a seasoned professional, I believe everyone should have the tools and knowledge
+                to leverage AI in their work and life.&quot;
               </div>
             </div>
 
